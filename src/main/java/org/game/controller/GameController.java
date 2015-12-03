@@ -24,9 +24,9 @@ public class GameController {
 	 
 	 @RequestMapping(value="/guess", method=RequestMethod.POST)
      public String guess(@Valid final Game game, BindingResult bindingResult) {
-		 System.out.println("number " + game.getGuess()); // test
-		 System.out.println("attempt " + game.getAttempt()); // test
-		 System.out.println("secretNumber " + game.getSecretNum()); // test
+//		 System.out.println("number " + game.getGuess()); // test
+//		 System.out.println("attempt " + game.getAttempt()); // test
+//		 System.out.println("secretNumber " + game.getSecretNum()); // test
 
 		 game.setMessage(messageService.checkUserGuess(game));
 		 return "index";
