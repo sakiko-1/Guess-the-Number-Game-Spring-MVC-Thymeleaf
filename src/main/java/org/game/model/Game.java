@@ -1,7 +1,6 @@
 package org.game.model;
 
 import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotNull;
 
 
 public class Game {
