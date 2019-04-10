@@ -5,8 +5,6 @@ import javax.validation.constraints.Digits;
 
 public class Game {
 	private int secretNum;
-//	@Digits(integer=3, fraction=0, message="{javax.validation.constraints.Digits.message}")
-	
 	@Digits(integer=3, fraction=0, message="{typeMismatch}")
 	private int guess;
 	private int attempt;
